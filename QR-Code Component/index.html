@@ -18,8 +18,7 @@
       box-sizing: border-box;
     }
     
-    .attribution { font-size: 11px;}
-    .attribution a { color: hsl(228, 45%, 44%);}
+    
     
     
     body{
@@ -49,11 +48,31 @@
       width: 320px;
       text-align: center;
       padding: 16px;
+      margin-top: auto;
     }
     
     .qr-code{
       border: 2px;
       border-radius: 10px;
+    }
+    
+    .cardText h2{
+      padding: 10px;
+      color: hsl(218, 44%, 22%)
+    }
+    .cardText p{
+      padding: 10px 12px;
+      color: hsl(216, 15%, 48%) ;
+      font-size: 15px;
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+      margin-top: auto;
+    } 
+    .attribution a { 
+      color: hsl(228, 45%, 44%);
     }
 
     
@@ -64,19 +83,16 @@
 <body>
   <div class="card">
       <img class="qr-code" src="images/image-qr-code.png" width="100%">
-      <br><br>
     
     <div class="cardText">
 
-    <h2>Improve your front-end<br> skills by building projects</h2>
-    <br>
-
-    Scan the QR code to visit Frontend Mentor and take your coding skills to<br> the next level
-    <br>
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>Scan the QR code to visit Frontend<br> Mentor and take your coding skills to the next level</p>
+      
     </div>
     
   </div>
-  
+  <br><br>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Rodrigo Santos Costa</a>

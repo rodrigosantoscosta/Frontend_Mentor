@@ -25,8 +25,10 @@
       background-color: hsl(0, 0%, 100%);
       border-radius: 16px;
       box-shadow: 0 10px 20px hsl(30, 54%, 90%);
-      width: 600px;
-      padding: 2rem;
+      width: 50%;
+      padding: 2.5rem;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
     }
 
     img {
@@ -34,9 +36,16 @@
       border-radius: 12px;
     }
 
-    h1, h2 {
+    h1{
       font-family: 'Young Serif', serif;
       color: hsl(14, 45%, 36%);
+    }
+
+    h2{
+      font-family: 'Young Serif', serif;
+      font-weight: 400;
+      color: hsl(14, 45%, 36%);
+      font-size: 28px;
     }
 
     h1 {
@@ -50,16 +59,33 @@
     }
 
     .preparation{
-      padding: 1rem;
+      padding-bottom: 1rem;
+      padding-top: 0.5rem;
+      padding-left: 2rem;
       border-radius: 12px;
-      margin-bottom: 1.5rem;
+      box-shadow:  2px 2px 2px hsl(330, 100%, 98%);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       background-color: hsl(330, 100%, 98%);
+    }
+
+    .preparation li::marker{
+      color: hsl(332, 51%, 32%);
+    }
+
+    .instructions li::marker{
+      color: hsl(14, 45%, 36%);
+    }
+
+    .ingredients li::marker{
+      color: hsl(14, 45%, 36%);
     }
 
     ul, ol {
       padding-left: 1.5rem;
       margin: 0.5rem 0;
       color: hsl(14, 45%, 36%);
+
     }
 
     li {
@@ -85,20 +111,21 @@
 
     td:first-child {
       color: hsl(30, 10%, 34%);
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
+      padding-right: 2.0rem;
+      padding-left: 2.0rem;
+      margin: 0;
     }
 
     td:last-child {
       font-weight: bold;
       color: hsl(14, 45%, 36%);
       padding-left: 7rem;
+      
     }
 
     hr{
-      border-bottom: 1px solid hsla(30, 18%, 87%, 0.671);
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      color: hsla(0, 0%, 100%, 0.226);
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -124,6 +151,7 @@
 
     
     <h2>Ingredients</h2>
+    <div class="ingredients">
     <ul>
       <li>2-3 large eggs</li>
       <li>Salt, to taste</li>
@@ -131,10 +159,11 @@
       <li>1 tablespoon of butter or oil</li>
       <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
     </ul>
-    
+  </div>
     <hr>
     
     <h2>Instructions</h2>
+    <div class="instructions">
     <ol>
       <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
       <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
@@ -143,6 +172,7 @@
       <li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
       <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
     </ol>
+  </div>
     
 
     <hr>

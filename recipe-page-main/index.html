@@ -38,7 +38,9 @@
 
     h1{
       font-family: 'Young Serif', serif;
-      color: hsl(14, 45%, 36%);
+      font-weight: 400;
+      color: hsl(24, 5%, 18%);
+      font-size: 10rem;
     }
 
     h2{
@@ -46,10 +48,6 @@
       font-weight: 400;
       color: hsl(14, 45%, 36%);
       font-size: 28px;
-    }
-
-    h1 {
-      color: hsl(24, 5%, 18%);
     }
 
     h3 {
@@ -73,7 +71,11 @@
       color: hsl(332, 51%, 32%);
     }
 
+    .instructions{
+
+    }
     .instructions li::marker{
+      font-weight: 700;
       color: hsl(14, 45%, 36%);
     }
 
@@ -111,7 +113,7 @@
 
     td:first-child {
       color: hsl(30, 10%, 34%);
-      padding-right: 2.0rem;
+      padding-right: 1.0rem;
       padding-left: 2.0rem;
       margin: 0;
     }
@@ -120,6 +122,7 @@
       font-weight: bold;
       color: hsl(14, 45%, 36%);
       padding-left: 7rem;
+      padding-right: 0;
       
     }
 
@@ -127,6 +130,76 @@
       color: hsla(0, 0%, 100%, 0.226);
       margin-top: 2rem;
     }
+
+    .lastLine td{
+      border-bottom: 0px hsl(0, 0%, 100%);
+    }
+
+  @media (max-width: 375px){
+  body {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .container {
+    margin: -10px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  img {
+    width: 375px;
+    padding: 0;
+    border-radius: 0;
+    margin-left: -30px;
+    margin-right: -100px;
+    margin-top: -30px;
+  }
+
+  .preparation {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+  }
+
+  table {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  td {
+    padding: 0.7rem 1rem;
+  }
+
+  td:first-child{
+    padding-right: 0;
+  }
+
+  td:last-child {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+''
+}
+  
+  
   </style>
 </head>
 <body>
@@ -174,8 +247,7 @@
     </ol>
   </div>
     
-
-    <hr>
+  <hr>
     
       <h2>Nutrition</h2>
       <p>The table below shows nutritional values per serving without the additional fillings.</p>
@@ -193,7 +265,7 @@
           <td>Protein</td>
           <td>20g</td>
         </tr>
-        <tr>
+        <tr class="lastLine">
           <td>Fat</td>
           <td>22g</td>
         </tr>

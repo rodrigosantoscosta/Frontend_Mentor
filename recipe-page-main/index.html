@@ -17,8 +17,8 @@
       color: hsl(30, 10%, 34%);
       display: flex;
       justify-content: center;
-      margin: 0;
       padding: 2rem;
+      font-size: 16px;
     }
 
     .container {
@@ -65,6 +65,7 @@
     li {
       margin-bottom: 0.5rem;
       color:hsl(30, 10%, 34%);
+      padding-left: 1rem;
     }
 
     strong {
@@ -74,30 +75,31 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 1rem;
-      margin: 1rem;
-      padding: 10px
+      padding: 2rem;
     }
 
     td {
-      border-bottom: 1px solid hsl(30, 18%, 87%);
-      padding: 0.5rem 0;
+      border-bottom: 1px solid hsla(30, 18%, 87%, 0.671);
+      padding: 1rem; 
     }
 
     td:first-child {
       color: hsl(30, 10%, 34%);
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
     }
 
     td:last-child {
       font-weight: bold;
       color: hsl(14, 45%, 36%);
+      padding-left: 7rem;
     }
 
     hr{
-      color: hsl(30, 54%, 90%);
-      margin: 10px;
+      border-bottom: 1px solid hsla(30, 18%, 87%, 0.671);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
-
   </style>
 </head>
 <body>
@@ -129,7 +131,7 @@
       <li>1 tablespoon of butter or oil</li>
       <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
     </ul>
-    <br>
+    
     <hr>
     
     <h2>Instructions</h2>
@@ -141,15 +143,16 @@
       <li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
       <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
     </ol>
-    <br>
+    
 
     <hr>
-    <div class="nutritionTable">
+    
       <h2>Nutrition</h2>
       <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <div class="nutritionTable">
       <table>
         <tr>
-          <td>    Calories</td>
+          <td>Calories</td>
           <td>277kcal</td>
         </tr>
         <tr>

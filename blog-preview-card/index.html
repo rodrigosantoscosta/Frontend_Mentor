@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap"> -->
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+
+  /* Regular */
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+  
+  body{
+    font-family: 'Figtree', sans-serif;
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      height: 100vh; /*deixa de acordo com a altura da tela do navegador*/
+  }
+
+  .container{
+      justify-content: center;
+      background-color: hsl(0, 0%, 100%); 
+      border-radius: 16px;
+      box-shadow:  9px 9px rgb(0, 0, 0.2); 
+      width: 320px;
+      max-width: 375px;
+      height: 470px;
+      text-align: left;
+      padding: 1.5rem;
+      padding-bottom: 0.5rem;
+      outline: 1px solid black;
+      
+  }
+
+  /* strong{
+    font-weight: 800;
+  } */
+
+  p{
+    font-size: 1rem;
+  }
+
+  h2{
+    font-weight: 600;
+  }
+
+  .publiDate{
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+  }
+
+  .explanation{
+    color: hsl(0, 0%, 42%);
+  }
+
+  .tagType{
+    color: hsl(0, 0%, 7%);
+    border-radius: 5px;
+    background-color: hsl(47, 88%, 63%);
+    width: 80px;
+    height: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #tagName{
+    margin:0;
+    padding: 7px;
+    font-weight: 800;
+    font-size: 13px;
+  }
+
+  .explanation{
+    font-weight: 500;
+    color: hsl(0, 0%, 42%);
+  }
+
+  .author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+    height: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .icon{
+    width:30px;
+    height:30px;
+  }
+
+  #authorName{
+    font-size: 14px;
+    padding-left: 0.8rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+  }
+
+  #publiDate{
+    color: hsl(0, 0%, 7%);
+    font-size: 14px;
+  }
+  
+  #cardArt{
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .explanation{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  h1{
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 375px) {
+  body {
+    padding: 0.5rem; 
+  }
+
+  .container {
+    width: 80%; 
+    padding: 1rem; 
+    height: auto;
+    padding-bottom: 
+  }
+
+  h1 {
+    font-size: 1.2rem; 
+  }
+
+  p {
+    font-size: 0.9rem; 
+  }
+
+  .tagType {
+    width: 70px; 
+    height: 30px;
+    font-size: 0.8rem; 
+  }
+
+  #authorName {
+    font-size: 12px; 
+  }
+
+  #publiDate {
+    font-size: 12px;
+  }
+}
+
+  
+
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <img id="cardArt"src="assets/images/illustration-article.svg" width="100%">
+  
+  <div class="tagType">
+    <p id="tagName">Learning</p>
+  </div>
+
+  <p id="publiDate"><strong>Published 21 Dec 2023</strong></p>
+
+  <h1>HTML & CSS foundations</h1>
+
+  <p class="explanation">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+  <div class="author">
+    <img class="icon" src="assets/images/image-avatar.webp" >
+    <p id="authorName">Greg Hooper</p>
+  </div>
+
+</div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

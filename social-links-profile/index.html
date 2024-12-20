@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    body{
+      font-family: 'Inter', sans-serif;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      height: 100vh;
+    }
+
+    p{
+      font-weight: 400;
+      color: hsl(0, 0%, 100%);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    #person{
+      font-weight: 600;
+      font-size: 24px;
+      color: hsl(0, 0%, 100%);
+      padding-top: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    #location{
+      font-weight: 700;
+      font-size: 14px;
+      color:hsl(75, 94%, 57%);
+      margin-top: 1px;
+    }
+
+    #bio{
+      font-size: 14px;
+      font-weight: 400;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: hsl(0, 0%, 12%);
+      width: 380px;
+      height: 600px;
+      border-radius: 12px;
+    }
+
+    .linkButtons{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .linkButtons button{
+      font-weight: 600;
+      background-color: hsl(0, 0%, 20%);
+      margin: 0.5rem;
+      width: 300px;
+      height: 45px;
+      border: 1px;
+      border-radius: 8px;
+    }
+
+    .linkButtons button:hover{
+      background-color: hsl(75, 100%, 50%);
+      color: hsl(0, 0%, 8%);
+    }
+
+  
+    
+    #avatar{
+      margin-top: 1rem;
+      border-radius: 50px;
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: 375px){
+      .container {
+        width: 80%;
+        padding: 0.5rem;
+      }
+
+      #person {
+        font-size: 14px;
+      }
+
+      #bio {
+        font-size: 14px;
+      }
+
+      .linkButtons button {
+        height: 50px;
+        font-size: 16px;
+        width: 80%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  
+  <img id="avatar" src="assets/images/avatar-jessica.jpeg" alt="Avatar of Jessica">
+  <h1 id="person">Jessica Randall</h1>
+  <h2 id="location">London, United Kingdom</h2>
+  <p id="bio">"Front-end developer and avid reader."</p>
+
+  <div class="linkButtons">
+  <button><p>GitHub</p></button>
+  <button><p>Frontend Mentor</p></button>
+  <button><p>LinkedIn</p></button>
+  <button><p>Twitter</p></button>
+  <button><p>Instagram</p></button>
+  </div>
+  
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

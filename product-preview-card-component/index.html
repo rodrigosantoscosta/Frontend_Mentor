@@ -21,17 +21,6 @@
     - Weights: 700    
        */
 
-      .fraunces-font1 {
-      font-family: "Fraunces", serif;
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-style: normal;
-      font-variation-settings:
-        "SOFT" 0,
-        "WONK" 0;
-    }
-
-
     html, body{
       height: 100%;
       width: 100%;
@@ -59,7 +48,11 @@
       display: flex;
       flex-direction: column;
       align-items: left;
-      padding: 1rem;
+      padding-top: 2rem;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+      padding-right: 2rem;
+      border: 0;
     }
 
     #image{
@@ -72,28 +65,102 @@
 
     #productTag{
       font-family: "Montserrat", serif;
-      
+      font-size: 14px;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
     }
+
+    #productName{
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      padding-right: 1.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 36px;
+      line-height: 2.5rem;
+      margin-bottom: 0;
+      margin-top: 1rem;
+    }
+
+    #productDescription{
+      font-family: "Montserrat", serif;;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5rem;
+      padding-right: 2.5rem;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .priceRange{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 60px;
+    }
+
+    .priceRange p{
+      padding-right: 1rem;
+    }
+
+    #price{
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      font-size: 36px;
+      color:hsl(158, 36%, 37%);
+    }
+
+    #priceFull{
+      font-family: "Montserrat", serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+    }
+
+    #addToCartButton{
+      width: 286px;
+      height: 50px;
+      background-color: hsl(158, 36%, 37%);
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      color: hsl(0, 0%, 100%);
+      border-radius: 12px;
+      align-items: center;
+      border: 0 solid hsl(158, 36%, 37%);
+      font-family: "Montserrat", serif;
+      font-weight: 700;
+      margin-top: auto;
+    }
+
+    
+    #addToCartButton:hover{
+      background-color: hsl(158, 100%, 11%);
+      cursor: pointer;
+    }
+
+    #iconCart{
+      width: 15px;
+      padding-right: 0.5rem;
+    }
+    
   </style>
 </head>
 <body>
-<div class="main">
   <div class="container">
     <img id="image" src="images/image-product-desktop.jpg">
   
     <div class = productContainer>
-      <h2 id="productTag">Perfume</h2>
+      <h2 id="productTag">P E R F U M E </h2>
       
       <h1 id="productName">Gabrielle Essence Eau De Parfum</h1>
 
-      <p id="prodcutDescription">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      <p id="productDescription">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
       Perfumer-Creator for the House of CHANEL.</p>
-
-      <p id="price">$149.99</p>
-      <p id="priceFUll">$169.99</p>
-      
-      
-      <button><img src="images/icon-cart.svg" alt="cartImage">Add to Cart<button>
+      <div class="priceRange">
+        <p id="price">$149.99</p>
+        <p id="priceFull"><del>$169.99</del></p>
+      </div>  
+      <button id="addToCartButton"><img id="iconCart"src="images/icon-cart.svg" alt="cartImage" >Add to Cart</button>
+    
   </div>
   </div>
   <!-- <footer>
@@ -102,6 +169,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </footer> -->
-</div>  
 </body>
 </html>

@@ -24,6 +24,8 @@
     html, body{
       height: 100%;
       width: 100%;
+      margin: 0;
+      padding: 0;
     }
     
     body{
@@ -39,7 +41,7 @@
       flex-direction: row;
       background-color: hsl(0, 0%, 100%);
       width: 650px;
-      height: 500px;
+      height: 520px;
       border-radius: 12px;
       margin: 0;
     }
@@ -94,7 +96,15 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      height: 60px;
+      height: 35px;
+      margin-top: 1rem;
+    }
+
+    .priceRange{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 44px;
     }
 
     .priceRange p{
@@ -106,6 +116,7 @@
       font-weight: 700;
       font-size: 36px;
       color:hsl(158, 36%, 37%);
+      margin: 0;
     }
 
     #priceFull{
@@ -128,8 +139,10 @@
       border: 0 solid hsl(158, 36%, 37%);
       font-family: "Montserrat", serif;
       font-weight: 700;
-      margin-top: auto;
+      margin-top: 2rem;
     }
+
+
 
     
     #addToCartButton:hover{
@@ -140,6 +153,75 @@
     #iconCart{
       width: 15px;
       padding-right: 0.5rem;
+    }
+
+    @media (max-width: 650px){
+        .container{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 350px;
+        height: 618px;
+      }
+
+      .productContainer{
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      #image{
+        content: url('images/image-product-mobile.jpg');
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+        width: 100%;
+      }
+
+      #productTag{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin: 0;
+        font-size: 12px;
+      }
+
+      #productName {
+        font-size: 32px;
+        line-height: 2rem;
+        padding-bottom: 0.5rem;
+        margin: 0;
+      }
+
+      #productDescription{
+        margin: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      .priceRange{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 0.5rem;
+        align-items: center;
+        margin: 0;
+      }
+      
+      #price{
+        font-size: 31px;
+        margin: 0;
+      }
+
+      #addToCartButton{
+        width:100%;
+        margin: 0;
+      }
+
+      .cartButton{
+        margin:0;
+        padding-top: 0.5rem;
+      }
+    
     }
     
   </style>
@@ -154,12 +236,15 @@
       <h1 id="productName">Gabrielle Essence Eau De Parfum</h1>
 
       <p id="productDescription">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-      Perfumer-Creator for the House of CHANEL.</p>
+      Perfumer-Creator for the House of CHANEL.
+      </p>
       <div class="priceRange">
         <p id="price">$149.99</p>
         <p id="priceFull"><del>$169.99</del></p>
       </div>  
+      <div class="cartButton">
       <button id="addToCartButton"><img id="iconCart"src="images/icon-cart.svg" alt="cartImage" >Add to Cart</button>
+    </div>
     
   </div>
   </div>

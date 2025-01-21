@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+      /* ### Neutral */
+
+    --darkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --lightGray: hsl(0, 0%, 98%);
+
+    /* Font */
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    }
+
+    html, body{
+      width: 100%;
+      height: 100%;
+    }
+
+    body{
+      font-family: "Poppins", serif;
+      background-color: var(--lightGray);
+      display:flex;
+      justify-content: center;
+    
+    }
+
+    .main{
+      margin: 0;
+    }
+
+    .header{
+
+    }
+    #title1{
+      font-weight: 200;
+    }
+
+    #title2{
+      font-weight: 400;
+    }
+    body {
+    font-family: "Poppins", serif;
+    background-color: var(--lightGray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  main {
+    max-width: 1200px;
+    text-align: center;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card h3 {
+    color: var(--darkBlue);
+  }
+
+  .card img {
+    margin-top: 20px;
+  }
+
+  #supervisor-section {
+    border-top: 5px solid var(--Cyan);
+  }
+
+  #team-builder-section {
+    border-top: 5px solid var(--Red);
+  }
+
+  #karma-builder-section {
+    border-top: 5px solid var(--Orange);
+  }
+
+  #calculator-builder-section {
+    border-top: 5px solid var(--Blue);
+  }
+
+  .grid #supervisor-section {
+    grid-row: 1 / span 2; 
+    grid-column: 1 / 2;
+    align-self: center; 
+}
+
+
+  .grid #team-builder-section {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    align-self: center;
+  }
+
+  .grid #karma-builder-section {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .grid #calculator-builder-section {
+    grid-row: 1 / span 2;
+    grid-column: 3 / 4;
+    align-self: center; 
+}
+
+  </style>
+</head>
+<body>
+  <main>
+    <div id ="container">
+    <div class ="header">
+      <h1 id="title1">Reliable, efficient delivery</h1>
+      <h1 id="title2">Powered by Technology</h1>
+      <p>Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful</p>
+    </div>
+    
+    <div class="grid">
+      <section class="card" id="supervisor-section">
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="images/icon-supervisor.svg" alt="Supervisor icon">
+      </section>
+      
+      <section class="card" id="team-builder-section">
+        <h3>Team Builder</h3>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img src="images/icon-team-builder.svg" alt="Team builder icon">
+      </section>
+      
+      <section class="card" id="karma-builder-section">
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src="images/icon-karma.svg">
+      </section>
+      
+      <section class="card" id="calculator-builder-section">
+        <h3>Calculator</h3>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="images/icon-calculator.svg">
+      </section>
+    </div>
+  </main>
+</body>
+</html>

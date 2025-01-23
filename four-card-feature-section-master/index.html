@@ -18,25 +18,25 @@
 
     /* ### Primary */
 
-    --Red: hsl(0, 78%, 62%);
-    --Cyan: hsl(180, 62%, 55%);
-    --Orange: hsl(34, 97%, 64%);
-    --Blue: hsl(212, 86%, 64%);
+      --Red: hsl(0, 78%, 62%);
+      --Cyan: hsl(180, 62%, 55%);
+      --Orange: hsl(34, 97%, 64%);
+      --Blue: hsl(212, 86%, 64%);
 
-      /* ### Neutral */
+    /* ### Neutral */
 
-    --darkBlue: hsl(234, 12%, 34%);
-    --grayishBlue: hsl(229, 6%, 66%);
-    --lightGray: hsl(0, 0%, 98%);
+      --darkBlue: hsl(234, 12%, 34%);
+      --grayishBlue: hsl(229, 6%, 66%);
+      --lightGray: hsl(0, 0%, 98%);
 
     /* Font */
-    font-size: 14px;
-    font-family: "Poppins", serif;
+      font-size: 14px;
+      font-family: "Poppins", serif;
     }
 
     html, body{
-      width: 100%;
-      height: 100%;
+        width: 100%;
+        height: 100%;
     }
 
     body{
@@ -52,7 +52,7 @@
     }
 
     .header{
-
+      text-align: center
     }
     #title1{
       font-weight: 200;
@@ -73,7 +73,7 @@
 
   main {
     max-width: 1200px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .header {
@@ -87,18 +87,27 @@
   }
 
   .card {
+    display: flex;
+    flex-direction: column;
     background: white;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
   }
 
   .card h3 {
     color: var(--darkBlue);
+    justify-content: flex-start;
+  }
+
+  .card p{
+    
   }
 
   .card img {
     margin-top: 20px;
+    align-items: right;
   }
 
   #supervisor-section {
@@ -156,18 +165,21 @@
     <div class="grid">
       <section class="card" id="supervisor-section">
         <h3>Supervisor</h3>
+        <br>
         <p>Monitors activity to identify project roadblocks</p>
         <img src="images/icon-supervisor.svg" alt="Supervisor icon">
       </section>
       
       <section class="card" id="team-builder-section">
         <h3>Team Builder</h3>
+        <br>
         <p>Scans our talent network to create the optimal team for your project</p>
         <img src="images/icon-team-builder.svg" alt="Team builder icon">
       </section>
       
       <section class="card" id="karma-builder-section">
         <h3>Karma</h3>
+        <br>
         <p>Regularly evaluates our talent to ensure quality</p>
         <img src="images/icon-karma.svg">
       </section>

@@ -41,17 +41,13 @@
       overflow-x: hidden;
     }
 
-    body {
+    body{
       font-family: "Poppins", serif;
       background-color: var(--lightGray);
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 1rem;
-      /* min-height: 100vh; */
-      box-sizing: border-box;
-      padding: 1px;
-      align-items: flex-start; /*Resolveu o problema do header não aparecer no topo da pagina */
+      min-height: 100vh;
     }
 
 
@@ -59,39 +55,43 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      margin: 4rem;
+      align-self: center;
+      margin:auto;
     }
 
 
     .header{
       text-align: center;
-      padding-left: 25rem;
-      padding-right: 25rem;
+      width: 50%;
     }
 
     #title1{
       font-weight: 200;
-      color: var(--grayishBlue);
+      color: var(--darkBlue);
+      font-size: xx-large;
+      margin: auto;
     }
 
     #title2{
       font-weight: 600;
       color: var(--darkBlue);
+      font-size: xx-large;
+      margin: auto;
     }
 
     .header p{
       font-weight: 400;
       color: var(--grayishBlue);
-      padding-left: 1rem;
-      padding-right: 1rem;
+      font-size: medium;
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
 
     .header {    
-      margin: auto;
-      margin-bottom: 2rem;
+      margin: 2rem auto;
       text-align: center;
       max-width: 800px;
-      padding: 0 1rem;
+      padding: 1rem;
     }
 
     .grid {
@@ -100,39 +100,43 @@
       row-gap: 20px;
     }
 
-    .card {
+    .card{
       display: flex;
       flex-direction: column;
       background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0px 4px 16px var(--grayishBlue);
+      border-radius: 6px;
+      padding: 2rem;
+      box-shadow: 2px 2px 10px var(--grayishBlue);
       text-align: left;
-      width: 280px;
+      width: 300px;
+      height: 200px;
       margin: 1rem;
-      
     }
 
-    .card h3 {
+    .card h3{
       color: var(--darkBlue);
-      justify-content: flex-start;
       font-weight: 800;
+      font-size: 1.5rem;  
+      align-self: flex-start;
       margin: 0;
     }
 
     .card p{
       color: var(--grayishBlue);
-      margin-top: 1rem;
       font-weight: 400;
       font-size: small;
+      align-self: flex-start;
+      margin-top: 1rem;
+      line-height: 1.6rem;
+      padding-right: 1rem;
     }
 
   
-    .card img {
-      margin-top: 20px;
-      margin-left: auto ;
+    .card img{
+      margin-top: auto;
       width: 50px;
       height: 50px;
+      align-self: flex-end;
     }
 
     .grid #supervisor-section {
@@ -165,21 +169,44 @@
 
     @media (max-width: 375px){
       body{
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
       }
+      
+      .container{
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+      }
+      
       .header{
-        
+        margin: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+        max-width: 90%;
+        margin-bottom: 3rem;
       }
-
+      
       #title1{
-        font-size: 1.5rem;
-        margin-top: 0.5rem;
+        font-size: 24px;
       }
 
       #title2{
-        font-size: 1.5rem;
-        margin-top: 0.5rem;
+       font-size: 24px ;
+      }
+
+      .header p{
+        font-size: 16px;
+        margin: 0;
+        margin-top: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
       }
 
 
@@ -195,17 +222,15 @@
       .card {
         width: 100%;
         max-width: 70%;
-        margin-bottom: 1rem;
-      }
-
-      .card p{
-        margin-top: 1rem;
+        height: 90%;
         
       }
 
-   
+      .card p{
+        margin-top: 0.5rem;
+        
+      }
     }
-
   </style>
 </head>
 <body>
@@ -220,21 +245,18 @@
     <div class="grid">
       <section class="card" id="supervisor-section">
         <h3>Supervisor</h3>
-        <br>
         <p>Monitors activity to identify project roadblocks</p>
         <img src="images/icon-supervisor.svg" alt="Supervisor icon">
       </section>
       
       <section class="card" id="team-builder-section">
         <h3>Team Builder</h3>
-        <br>
         <p>Scans our talent network to create the optimal team for your project</p>
         <img src="images/icon-team-builder.svg" alt="Team builder icon">
       </section>
       
       <section class="card" id="karma-builder-section">
-        <h3>Karma</h3>
-        <br>
+        <h3>Karma</h3>   
         <p>Regularly evaluates our talent to ensure quality</p>
         <img src="images/icon-karma.svg">
       </section>
